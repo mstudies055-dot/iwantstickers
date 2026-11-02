@@ -1978,10 +1978,16 @@
   <!-- ==========================================================================
        الجافاسكريبت (JavaScript) مع نظام الكشف الذكي عن الصيغ
        ========================================================================== -->
-  <script>
+ <script>
+    // تعطيل استعادة التمرير التلقائية لضمان العودة لنفس مكان التصفح
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+
     const WHATSAPP_NUMBER = "212719370686";
     const EMAIL_RECEIVER = "mstudies055@gmail.com";
-    const GOOGLE_SCRIPT_URL = "PUT_YOUR_GOOGLE_SCRIPT_WEB_APP_URL_HERE";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwrgYFbKHT1pvt-Qml96QZlGekiIz1buX23L_QtyECTikNY3Y2Isy43K9XdIrB_DSsn2w/exec";
+    const WHATSAPP_BOT_API_KEY = "PUT_YOUR_CALLMEBOT_API_KEY_HERE";
 
     const DEFAULT_PRICE_NORMAL = 35.00;
     const DEFAULT_PRICE_3D = 60.00;
